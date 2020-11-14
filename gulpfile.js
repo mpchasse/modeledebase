@@ -116,7 +116,7 @@ const serveur = function () {
         notify: false,
         //browser: ["firefox"]
         //browser: ["google chrome"]
-        browser: ["firefox", "google chrome"]
+        browser: ["chrome"]
     });
 
     //Vérification si quelque chose change et recharge la page
