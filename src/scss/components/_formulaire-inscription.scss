@@ -1,0 +1,49 @@
+.formulaire-inscription {
+
+  fieldset {
+    border: 0;
+
+    legend {
+      display: none;
+    }
+  }
+
+  ol {
+    list-style: none;
+    padding: 0;
+
+    li {
+      display: flex;
+      flex-direction: column;
+
+      margin-bottom: 10px;
+    }
+  }
+
+  input[type="submit"] {
+
+    border: 1px solid $gray-700;
+  }
+}
+  @media screen and (min-width: $vw-medium) {
+
+    .formulaire-inscription {
+      width: 600px;
+      margin: 0 auto;
+
+      ol {
+        li {
+          flex-direction: row;
+          align-items: center;
+
+          label {
+            margin-right: 10px;
+            min-width: 150px;
+          }
+        }
+      }
+    }
+  }
+
+
+

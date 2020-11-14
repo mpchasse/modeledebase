@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indiquer le titre de la page</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Arimo&display=swap" rel="stylesheet">
+    <script src="js/script.js"></script>
+
+</head>
+<body>
+
+<header class="header-page">
+    <nav>
+        <h1><a href="#">Exemple formulaire</a></h1>
+
+        <ul>
+            <li><a href="">Accueil</a></li>
+            <li>
+                <a href="">Catégories</a>
+
+                <ul>
+                    <li><a href="#">Item 12</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                    <li><a href="#">Item 4</a></li>
+                </ul>
+            </li>
+            <li><a href="">Inscription</a></li>
+            <li><a href="">Ajout</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<div class="wrapper">
+
+<section class="login-container">
+
+    <form class="formulaire-inscription" action="" method="post">
+        <fieldset>
+            <legend>Identification:</legend>
+            <ol>
+                <li>
+                    <label for="prenom">Prénom: </label>
+                    <input id="prenom" type="text" name="prenom" placeholder="Inscrivez votre prénom">
+                </li>
+                <li>
+                    <label for="nom">Nom: </label>
+                    <input id="nom" type="text" name="nom" placeholder="Inscrivez votre nom">
+                </li>
+                <li>
+                    <label for="date-naissance">Date de naissance:</label>
+                    <input id="date-naissance" type="date" name="date-naissance" placeholder="aaaa-mm-jj">
+                </li>
+                <li>
+                    <label for="email">Courriel: </label>
+                    <input id="email" type="email" placeholder="exemple@domaine.com">
+                </li>
+                <li>
+                    <label for="password">Mot de passe: </label>
+                    <input id="password" type="password" name="password" placeholder="Mot de passe">
+                </li>
+                <li>
+                    <label for="verif-password">Confirmation: </label>
+                    <input id="verif-password" type="text" name="verif-password" placeholder="Confirmation du mot de passe">
+                </li>
+            </ol>
+
+        </fieldset>
+        <fieldset>
+            <input type="submit" value="Envoyer">
+        </fieldset>
+    </form>
+</section>
+
+</div>
+</body>
+</html>

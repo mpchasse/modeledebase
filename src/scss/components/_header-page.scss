@@ -1,0 +1,56 @@
+.header-page {
+  background-color: $color-bg-dark;
+
+  nav {
+    display: flex;
+
+    flex-direction: column;
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        position:relative;
+        background-color: $color-bg-dark;
+        a {
+          display: inline-block;
+          padding:10px 5px;
+          width:100%;
+        }
+        ul{
+          position:absolute;
+          display:none;
+
+          a{
+            display:inline-flex;
+            min-width:150px;
+          }
+        }
+      }
+
+      li:hover {
+        background-color: lighten($color-bg-dark, 35%);
+        ul{
+          display:block;
+        }
+      }
+    }
+
+  }
+}
+
+@media screen and (min-width:$vw-medium){
+
+  .header-page{
+    nav{
+      flex-direction:row;
+      justify-content:space-between;
+      align-items:center;
+
+      ul{
+        display:flex;
+      }
+    }
+  }
+}
