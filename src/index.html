@@ -2,81 +2,82 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Indiquer le titre de la page</title>
 
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Arimo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href=".dist/css/normalize.css">
+    <link rel="stylesheet" href=".dist/css/main.css">
+
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+
     <script src="js/script.js"></script>
 
 </head>
 <body>
 
-<header class="header-page">
+
+<header>
     <nav>
-        <h1><a href="#">Exemple formulaire</a></h1>
-
+<!--        <div class="menu"><a href="index.html"><h5 class=""><img src="https://mchasse.dectim.ca/cours/cw4/tp03/wp-content/themes/tp3.3/images/logo.png" height="75" width="75"/>feStylos-->
+<!--        </h5></a> <label for="show-menu" class="show-menu"><img class="material-icons" src="https://mchasse.dectim.ca/cours/cw4/tp03/wp-content/themes/tp3.3/images/menu.png"-->
+<!--                                                                alt="menu"></label></div>-->
+        <input type="checkbox" id="show-menu" class="toggle-menu">
         <ul>
-            <li><a href="">Accueil</a></li>
-            <li>
-                <a href="">Catégories</a>
-
-                <ul>
-                    <li><a href="#">Item 12</a></li>
-                    <li><a href="#">Item 2</a></li>
-                    <li><a href="#">Item 3</a></li>
-                    <li><a href="#">Item 4</a></li>
-                </ul>
-            </li>
-            <li><a href="">Inscription</a></li>
-            <li><a href="">Ajout</a></li>
+            <li class=""><a href="index.html">Accueil</a></li>
+            <li class=""><a href="template-projets.html">Projets</a></li>
+            <li class=""><a href="template-apropos.html">À propos</a></li>
+            <li class=""><a href="template-contact.html">Contact</a></li>
         </ul>
     </nav>
-</header>
 
+    <div>
+        <img src="images/logotype.png" alt="logotype MPC">
+    </div>
+
+</header>
 
 <div class="wrapper">
 
-<section class="login-container">
+    <hero>
 
-    <form class="formulaire-inscription" action="" method="post">
-        <fieldset>
-            <legend>Identification:</legend>
-            <ol>
-                <li>
-                    <label for="prenom">Prénom: </label>
-                    <input id="prenom" type="text" name="prenom" placeholder="Inscrivez votre prénom">
-                </li>
-                <li>
-                    <label for="nom">Nom: </label>
-                    <input id="nom" type="text" name="nom" placeholder="Inscrivez votre nom">
-                </li>
-                <li>
-                    <label for="date-naissance">Date de naissance:</label>
-                    <input id="date-naissance" type="date" name="date-naissance" placeholder="aaaa-mm-jj">
-                </li>
-                <li>
-                    <label for="email">Courriel: </label>
-                    <input id="email" type="email" placeholder="exemple@domaine.com">
-                </li>
-                <li>
-                    <label for="password">Mot de passe: </label>
-                    <input id="password" type="password" name="password" placeholder="Mot de passe">
-                </li>
-                <li>
-                    <label for="verif-password">Confirmation: </label>
-                    <input id="verif-password" type="text" name="verif-password" placeholder="Confirmation du mot de passe">
-                </li>
-            </ol>
+        <div>
 
-        </fieldset>
-        <fieldset>
-            <input type="submit" value="Envoyer">
-        </fieldset>
-    </form>
-</section>
+            <h2>Marie-Pier Chassé</h2>
+            <div class="cadre">
+            </div>
+
+            <p class="hero">Tu recherches une stagiaire</p>
+            <p class="upper">engagée & créative ?</p>
+            <hr>
+            <p class="hero">Ne cherchez pas plus loin je suis la designer assidue qu'il vous faut !</p>
+            <div>
+
+            </div>
+            <div>
+                <div class="arrowbutton"></div>
+                <button class="btn">Contactez-moi</button>
+            </div>
+
+
+        </div>
+
+    </hero>
 
 </div>
+
+<footer>
+
+   <p>
+       © 2020 Marie-Pier Chassé
+   </p>
+</footer>
+
+
 </body>
 </html>

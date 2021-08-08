@@ -1,0 +1,276 @@
+.page-contact {
+  text-transform: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h1, h3, p {
+    text-align: center;
+  }
+
+
+  form {
+    width: $max-width;
+
+
+  }
+
+  #gform_fields_1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    flex-wrap: wrap;
+
+    #field_1_2, #field_1_3, #field_1_5, #field_1_6, #field_1_8 {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      margin-bottom: 50px;
+
+      height: 110px;
+      width: 50%;
+
+
+      #input_1_5, #input_1_6, #input_1_3, #input_1_2, #input_1_4, #input_1_8 {
+        border: 5px $noir solid;
+        height: 60px;
+        width: 100%;
+
+        background-color: $jaune;
+      }
+
+    }
+
+
+    #field_1_4 {
+      width: 100%;
+
+      #input_1_4 {
+        border: 5px $noir solid;
+        height: 60px;
+        width: 100%;
+        background-color: $jaune;
+      }
+    }
+
+    #field_1_8 {
+      width: 100%;
+    }
+
+
+  }
+
+  .gform_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .gform_button:hover {
+      //background-color: $rose;
+      color: $bleu;
+
+    }
+  }
+
+
+  //article {
+  //  margin: 50px 0;
+  //
+  //  .carredeco {
+  //    width: 50px;
+  //    height: 50px;
+  //    border: 5px $noir solid;
+  //    position: relative;
+  //
+  //    margin-right: 50px;
+  //  }
+  //
+  //  .titlearticle {
+  //    display: flex;
+  //    flex-direction: row;
+  //    align-items: center;
+  //  }
+  //
+  //
+  //}
+
+
+}
+
+
+.reseaux-sociaux {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 75%;
+  margin: 50px auto;
+
+  img {
+    width: 70%;
+  }
+
+  .behance:hover {
+    content: url("../images/behance-hover.png");
+  }
+
+  .facebook:hover {
+    content: url("../images/facebook-hover.png");
+  }
+
+  .instagram:hover {
+    content: url("../images/instagram-hover.png");
+  }
+
+  .linkedin:hover {
+    content: url("../images/linkedin-hover.png");
+  }
+
+  .youtube:hover {
+    content: url("../images/youtube-hover.png");
+  }
+
+  .sketchfab:hover {
+    content: url("../images/sketchfab-hover.png");
+  }
+
+
+}
+
+@media screen and (max-width: 375px) {
+
+  .page-contact {
+
+    .reseaux-sociaux {
+      margin: 25px auto
+    }
+    h3 {
+      font-size: $fz-mobileh3;
+    }
+
+    p {
+      font-size: $fz-mobilep;
+    }
+
+    #gform_fields_1 {
+
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+
+      flex-wrap: wrap;
+
+      #field_1_2, #field_1_3, #field_1_4, #field_1_5, #field_1_6, #field_1_8 {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 50px;
+
+        height: 40px;
+        width: 45%;
+        font-size: 12px;
+
+
+        #input_1_5, #input_1_6, #input_1_3, #input_1_2, #input_1_4, #input_1_8 {
+          border: 3px $noir solid;
+          height: 40px;
+          width: 100%;
+
+          background-color: $jaune;
+        }
+
+
+      }
+
+
+      #field_1_4 {
+        width: 100%;
+
+        #input_1_4 {
+          border: 3px $noir solid;
+          height: 40px;
+          width: 100%;
+          background-color: $jaune;
+        }
+      }
+
+      #field_1_8 {
+        width: 100%;
+      }
+
+      #field_1_3 {
+        margin-right: 33px;
+      }
+
+      #field_1_5 {
+        margin-right: 33px;
+      }
+    }
+
+    label {
+      font-size: $fz-mobileh4;
+    }
+
+    article {
+      margin: 0px auto;
+      width: $max-mobilewidth;
+
+      h3 {
+        font-size: $fz-mobileh3;
+      }
+
+      p {
+        font-size: $fz-mobilep;
+      }
+
+      .carredeco {
+        width: 15px;
+        height: 15px;
+        border: 3px $noir solid;
+        position: relative;
+
+        margin-right: 30px;
+      }
+
+      .carredeco::before {
+
+        content: "";
+        position: absolute;
+        background-color: $rose;
+        z-index: -1;
+        width: 15px;
+        height: 15px;
+        bottom: 5px;
+        right: 5px;
+      }
+
+    }
+
+    button {
+      width: 150px;
+    }
+
+    button::before{
+      right: 0;
+      top: -65%;
+    }
+
+    button::after{
+      bottom: -40%;
+      right: -80%;
+    }
+    button:hover::after{
+      bottom: -120%;
+      right: -45%;
+    }
+
+
+  }
+
+
+}

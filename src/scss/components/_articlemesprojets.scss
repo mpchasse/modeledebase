@@ -1,0 +1,232 @@
+.section-mesprojets {
+  article {
+    margin: 50px auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .mesprojets-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+
+
+      h3 {
+        text-align: end;
+        margin-top: 0;
+
+      }
+
+      h4 {
+        margin: 0;
+      }
+
+      .sous-titre {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 110px;
+      }
+
+      .article-wrapper {
+        padding: 0 0 0 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        margin: 25px 0 0 0;
+
+        .centrer {
+          margin-top: -50px;
+        }
+
+      }
+
+      .texte-projet {
+        width: 80%;
+
+        p {
+          margin-top: 0;
+        }
+      }
+
+      .image-projet {
+
+
+        .remonter {
+          margin-top: -100px;
+        }
+
+
+      }
+
+
+    }
+
+  }
+
+  img.equerrebleue {
+    width: 319px;
+    height: 316px;
+    transform: rotate(-90deg);
+
+    z-index: -1;
+    position: absolute;
+  }
+
+  img.equerrejaune {
+    width: 319px;
+    height: 316px;
+    transform: rotate(-90deg);
+    z-index: -1;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .icones-articles {
+    display: flex;
+    //justify-content: space-between;
+    align-items: center;
+
+
+    img {
+      width: 7%;
+      margin: 20px 20px 0 0;
+      opacity: 100%;
+    }
+  }
+
+  .carredeco {
+    width: 50px;
+    height: 50px;
+    border: 5px $noir solid;
+    position: relative;
+
+    margin-right: 50px;
+  }
+
+  .carredeco::before {
+
+    content: "";
+    position: absolute;
+    background-color: $rose;
+    z-index: -1;
+    width: 50px;
+    height: 50px;
+    bottom: 5px;
+    right: 5px;
+  }
+
+  .titlearticle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+
+}
+
+@media screen and (max-width: 375px) {
+  .section-mesprojets {
+    width: $max-mobilewidth;
+    margin: 0 auto;
+
+    img.equerrebleue {
+      width: 150px;
+      height: 150px;
+    }
+
+    article {
+      margin: 25px auto;
+
+
+      h4 {
+        font-size: $fz-mobileh4;
+      }
+
+      p {
+        font-size: $fz-mobilep;
+      }
+
+      .mesprojets-info {
+
+        .image-projet {
+          .remonter {
+            margin-top: -10px;
+          }
+        }
+
+        h3 {
+          font-size: $fz-mobileh3;
+
+        }
+
+        .sous-titre {
+          margin-left: 40px;
+        }
+
+        .article-wrapper {
+          flex-direction: column-reverse;
+          padding: 20px;
+
+          .texte-projet{
+            width: 100%;
+
+            .icones-articles{
+              justify-content: center;
+              width: 100%;
+              margin: 0 10px;
+            }
+          }
+
+        }
+      }
+
+      .carredeco {
+        width: 15px;
+        height: 15px;
+        border: 3px $noir solid;
+        position: relative;
+
+        margin-right: 30px;
+      }
+
+      .carredeco::before {
+
+        content: "";
+        position: absolute;
+        background-color: $rose;
+        z-index: -1;
+        width: 15px;
+        height: 15px;
+        bottom: 5px;
+        right: 5px;
+      }
+
+
+      button {
+        width: 150px;
+      }
+
+      button::before {
+        right: 0;
+        top: -65%;
+      }
+
+      button::after {
+        bottom: -40%;
+        right: -80%;
+      }
+
+      button:hover::after {
+        bottom: -120%;
+        right: -45%;
+      }
+
+    }
+  }
+}

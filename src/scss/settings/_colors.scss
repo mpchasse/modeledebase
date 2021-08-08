@@ -1,7 +1,7 @@
 //FICHIER DE CONFIGURATION POUR LES VARIABLES DE COULEUR
 
 // Couleur de base
-$white:    #fff;
+$white: #fff;
 $gray-100: #f8f9fa;
 $gray-200: #e9ecef;
 $gray-300: #dee2e6;
@@ -11,40 +11,43 @@ $gray-600: #6c757d;
 $gray-700: #495057;
 $gray-800: #343a40;
 $gray-900: #212529;
-$black:    #000;
-
+$black: #000;
 
 // Couleurs du projet
 
-$color-text-normal: $gray-800;
+$noir: #282828;
+$blanc: #FFFDFD;
+$jaune: #FCEB0F;
+$bleu: #25E6E5;
+$violet: #CB84DE;
+$rose: #FA4B84;
 
-$color-bg-page: $white;
+$color-text-normal: $noir;
 
-$color-bg-light: $gray-100;
+$color-bg-page: $blanc;
+
+$color-bg-light: $blanc;
 $color-bg-dark: $gray-800;
 
 $color-title-light: $gray-100;
 $color-title-dark: $gray-800;
 
-$color-link: $gray-100;
+$color-link: $blanc;
 $color-link-visited: $color-link;
-$color-link-hover: lighten($color-link, 35%);
+$color-link-hover: $bleu;
 //$color-link-hover: darken($color-link, 5%);
 $color-link-active: lighten($color-link, 15%);
 //$color-link-active: darken($color-link, 15%);
 $color-link-focus: $color-link;
 
-
 // Couleurs pour formulaire
-$base-input-placeholder-color:                  #999 ;
-$base-input-color:                              #000 ;
-$base-input-background-color:                   #fff ;
-$base-input-background-focus-color:             #fff ;
-$base-input-border-color:                       #ccc ;
-$base-input-border-focus-color:                 #000 ;
+$base-input-placeholder-color: #999;
+$base-input-color: #000;
+$base-input-background-color: #fff;
+$base-input-background-focus-color: #fff;
+$base-input-border-color: #ccc;
+$base-input-border-focus-color: #000;
 $base-select-box-height: 36px;
-
-
 
 // Couleurs des médias sociaux
 $color-facebook: #3b5999;

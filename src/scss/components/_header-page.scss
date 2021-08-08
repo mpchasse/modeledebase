@@ -1,56 +1,280 @@
-.header-page {
-  background-color: $color-bg-dark;
-
-  nav {
-    display: flex;
-
-    flex-direction: column;
-
-    ul {
-      list-style: none;
-      padding: 0;
-
-      li {
-        position:relative;
-        background-color: $color-bg-dark;
-        a {
-          display: inline-block;
-          padding:10px 5px;
-          width:100%;
-        }
-        ul{
-          position:absolute;
-          display:none;
-
-          a{
-            display:inline-flex;
-            min-width:150px;
-          }
-        }
-      }
-
-      li:hover {
-        background-color: lighten($color-bg-dark, 35%);
-        ul{
-          display:block;
-        }
-      }
-    }
-
+@keyframes mymove {
+  0% {
+    transform: translateX(0)
+  }
+  50% {
+    transform: translateX(-25%)
+  }
+  100% {
+    transform: translateX(-50%)
   }
 }
 
-@media screen and (min-width:$vw-medium){
 
-  .header-page{
-    nav{
-      flex-direction:row;
-      justify-content:space-between;
-      align-items:center;
+.waveWrapper {
+  //position: relative;
+  //z-index: -5;
 
-      ul{
-        display:flex;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+}
+
+.waveWrapperInner {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  height: 300px;
+
+}
+
+.wave {
+  position: relative;
+  left: 0;
+  width: 200vw;
+  height: 100%;
+  background-repeat: repeat no-repeat;
+
+}
+
+
+.wave1 {
+  background-image: url("../images/waverose.png");
+}
+
+.wave2 {
+
+  background-image: url("../images/wavenoire.png");
+
+}
+
+
+.waveAnimation .wave1 {
+  animation: mymove 20s linear infinite;
+  -webkit-animation: mymove 20s linear infinite;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.waveAnimation .wave2 {
+
+  animation: mymove 10s linear infinite;
+  -webkit-animation: mymove 10s linear infinite;
+  -webkit-animation-delay: 2s;
+  animation-delay: 1s;
+}
+
+
+header {
+  width: 100%;
+
+  .show-menu {
+    display: none;
+  }
+
+
+  .toggle-menu:checked + ul {
+    //display: block;
+
+    background-color: $color-bg-dark;
+    margin-top: 0;
+
+    display: flex;
+    flex-direction: column;
+    z-index: 50;
+
+  }
+
+
+  nav {
+
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      margin: 0 auto;
+      padding: 20px;
+      width: 60%;
+
+      position: relative;
+
+
+      li {
+        justify-content: space-between;
+
+        list-style: none;
+        font-family: $ff-title;
+        font-size: $fz-nav;
+
+
       }
+
+      a {
+        position: relative;
+      }
+
+      a::after {
+        content: "";
+
+        background-image: url("../images/triangle.png");
+        position: absolute;
+
+        width: 85px;
+        height: 93px;
+        background-repeat: no-repeat;
+        background-size: 50%;
+
+        z-index: 1;
+        bottom: 0;
+        right: -100px;
+
+        opacity: 0;
+        transition: 1s;
+
+      }
+
+      a:hover::after {
+        opacity: 1;
+
+        bottom: -25px;
+        right: -80px;
+
+      }
+
+
+    }
+
+    div {
+
+      position: absolute;
+      top: 7px;
+      display: flex;
+      flex-direction: row;
+      width: 100%;
     }
   }
+
+  .logotype {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: -140px;
+    left: 80px;
+
+    transform: rotate(45deg);
+    background-color: $violet;
+    border: 5px solid $blanc;
+
+    img {
+      position: relative;
+      top: 120px;
+      left: 100px;
+      width: 75px;
+
+      transform: rotate(-45deg);
+
+    }
+
+  }
+
+}
+
+@media screen and (max-width: 375px) {
+
+
+  .wave1 {
+    background-size: 150%;
+  }
+  .wave2 {
+    background-size: 200%;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  header {
+
+    //navbar {
+    //  display: block;
+    //
+    //
+    //
+    //}
+    .navbar {
+      background-color: $noir;
+      z-index: 4;
+    }
+
+    nav ul {
+      flex-direction: column;
+      background-color: #282828;
+      width: 100%;
+      margin-top: 50px;
+
+      li {
+        font-size: $fz-mobilenav;
+        text-align: center;
+        margin: 5px auto;
+      }
+    }
+
+
+    .show-menu {
+      display: block;
+    }
+
+    .showNav {
+      display: flex;
+      width: 100%;
+      //height:25%;
+
+    }
+
+    span {
+      display: block;
+    }
+
+    .iconemenu {
+      //display: flex;
+      z-index: 50;
+
+      position: absolute;
+      width: 10%;
+      margin-left: 80%;
+      margin-top: 25px;
+    }
+
+    .logotype {
+      width: 100px;
+      height: 100px;
+      position: relative;
+      top: -86px;
+      left: 30px;
+
+      transform: rotate(45deg);
+      background-color: $violet;
+      border: 5px solid $blanc;
+      z-index: 5;
+
+      img {
+        position: relative;
+        top: 40px;
+        left: 40px;
+        width: 40px;
+
+        transform: rotate(-45deg);
+
+      }
+
+    }
+  }
+
+
 }

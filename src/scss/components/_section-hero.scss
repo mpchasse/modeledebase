@@ -1,0 +1,259 @@
+.hero1 {
+  margin-top: 20px;
+
+  div {
+    text-align: center;
+    //display: flex;
+    //flex-direction: column;
+    //align-items: center;
+
+
+    h2 {
+
+      position: relative;
+      display: inline-block;
+
+      margin: 0px auto;
+      margin-bottom: 50px;
+      padding: 10px;
+      width: 40%;
+
+      text-align: center;
+      color: $blanc;
+      background-color: $violet;
+
+      letter-spacing: .2em;
+
+    }
+
+    h2::before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 20%;
+      top: -30%;
+      width: 80%;
+      height: 160%;
+      border: 8px black solid;
+      z-index: 1;
+
+    }
+
+    h2::after {
+      content: "";
+      display: block;
+      background-color: $violet;
+      width: 120%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: -5%;
+      z-index: 1;
+    }
+
+    span {
+      position: relative;
+      z-index: 2;
+      text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.9);
+    }
+
+    span::after {
+      content: "";
+      width: 8px;
+      height: 140%;
+      position: absolute;
+      display: block;
+      top: -5px;
+      left: calc(100% + 14px);
+      background: black;
+    }
+
+
+    p {
+      margin: 0;
+      font-weight: $fw-bold;
+    }
+
+    .upper {
+      text-transform: uppercase;
+      font-size: $fz-h1;
+      font-family: $ff-title;
+      font-weight: $fw-medium;
+    }
+
+    hr {
+      height: 15px;
+      width: 20%;
+
+      margin-top: 40px;
+      margin-bottom: 40px;
+      text-align: center;
+
+      background-color: $rose;
+    }
+
+  }
+
+  .image-hero::before {
+    content: "";
+    background-image: url("../images/losange.png");
+    width: 256px;
+    height: 256px;
+    position: absolute;
+
+    transform-origin: center;
+    left: 30%;
+    top: -90px;
+    z-index: -1;
+  }
+
+  .texte-hero {
+    margin-top: 50px;
+  }
+
+
+}
+
+.center1 {
+  display: block;
+  margin: 50px auto;
+}
+
+
+@media screen and (max-width: 375px) {
+
+  .wrapper{
+    bottom:0;
+  }
+  .hero1 {
+    margin-top: 40px;
+
+    div {
+      //text-align: center;
+      //display: flex;
+      //flex-direction: column;
+      //align-items: center;
+
+
+      h2 {
+        font-size: 16px;
+        //position: relative;
+        //display: inline-block;
+
+        //margin: 0px auto;
+        //margin-bottom: 50px;
+        //padding: 10px;
+        width: 55%;
+
+        //text-align: center;
+        //color: $blanc;
+        //background-color: $violet;
+
+        letter-spacing: .2em;
+
+      }
+
+      h2::before {
+        //content: "";
+        //display: block;
+        //position: absolute;
+        //left: 20%;
+        //top: -30%;
+        //width: 80%;
+        //height: 160%;
+        border: 3px black solid;
+        //z-index: 1;
+
+      }
+
+      h2::after {
+        //content: "";
+        //display: block;
+        //background-color: $violet;
+        //width: 120%;
+        //height: 100%;
+        //position: absolute;
+        //top: 0;
+        //left: -5%;
+        //z-index: 1;
+      }
+
+      span {
+        //position: relative;
+        //z-index: 2;
+        //text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.9);
+      }
+
+      span::after {
+        width: 3px;
+        height: 200%;
+        padding: 0;
+        left: 188px;
+        top: -8px;
+      }
+
+
+      p {
+        margin: 0;
+        font-weight: $fw-bold;
+      }
+
+      .upper {
+
+      }
+
+      hr {
+        height: 5px;
+        width: 20%;
+
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+
+        background-color: $rose;
+      }
+
+    }
+
+    .image-hero::before {
+      content: "";
+      background-image: url("../images/losange.png");
+      background-repeat: no-repeat;
+      background-size: 35%;
+      //width: 25%;
+      //height: 25%;
+      //position: absolute;
+
+      //transform-origin: center;
+      left: 25%;
+      top: -25px;
+      //z-index: -1;
+
+      img{
+        width:25%;
+      }
+    }
+
+    .texte-hero {
+      margin-top: 0px;
+      h1{
+        font-size: $fz-mobileh1;
+      }
+
+      .hero{
+        font-size: $fz-mobilep;
+      }
+      .upper{
+//font-size: $fz-mobileh1;
+      }
+    }
+
+
+  }
+
+  .center1 {
+    display: block;
+    margin: 50px auto;
+  }
+
+}

@@ -1,0 +1,19 @@
+footer{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top:50px;
+  margin-bottom:0;
+  padding:25px;
+  height:100px;
+
+  background-color: $noir;
+  color:$blanc;
+
+
+  p{
+    font-size: $fz-h6;
+  }
+}
