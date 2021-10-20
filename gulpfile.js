@@ -115,8 +115,8 @@ const serveur = function () {
         ghostMode: false,
         notify: false,
         //browser: ["firefox"]
-        //browser: ["google chrome"]
         browser: ["chrome"]
+        // browser: ["firefox", "google chrome"]
     });
 
     //Vérification si quelque chose change et recharge la page
