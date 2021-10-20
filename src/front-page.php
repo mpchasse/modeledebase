@@ -14,7 +14,7 @@
                 <p class="hero">Vous recherchez une stagiaire en design</p>
                 <p class="upper">engagée & créative ?</p>
                 <hr>
-                <p class="hero">Ne cherchez pas plus loin !</p>
+                <p class="hero">Ne cherchez pzdsrtgsaergas plus loin !</p>
                 <div class="centrer1">
                     <button class="btn"><a href="<?php bloginfo('url'); ?>/mes-projets">Voir mes
                             projets</a></button>

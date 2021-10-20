@@ -1,11 +1,11 @@
 <?php
 
-//support image à la une
+//support images à la une
 
 add_theme_support('post-thumbnails');
 set_post_thumbnail_size(360, 240);
 
-//ajouter un nouveau format d'image
+//ajouter un nouveau format d'images
 add_image_Size('vignette', 220, 100, true);
 
 function new_excerpt_length($length)
@@ -65,9 +65,9 @@ if (!function_exists('mpc_projet')) {
             'not_found' => __('Not found', 'mpc_projet'),
             'not_found_in_trash' => __('Not found in Trash', 'mpc_projet'),
             'featured_image' => __('Featured Image', 'mpc_projet'),
-            'set_featured_image' => __('Set featured image', 'mpc_projet'),
-            'remove_featured_image' => __('Remove featured image', 'mpc_projet'),
-            'use_featured_image' => __('Use as featured image', 'mpc_projet'),
+            'set_featured_image' => __('Set featured images', 'mpc_projet'),
+            'remove_featured_image' => __('Remove featured images', 'mpc_projet'),
+            'use_featured_image' => __('Use as featured images', 'mpc_projet'),
             'insert_into_item' => __('Insert into item', 'mpc_projet'),
             'uploaded_to_this_item' => __('Uploaded to this item', 'mpc_projet'),
             'items_list' => __('Items list', 'mpc_projet'),

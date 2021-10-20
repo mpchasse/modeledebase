@@ -91,7 +91,7 @@ const optimiser_js = function() {
 // Processus qui vérifie s'il y a eu un changement dans le dossier et exécute le processus qui s'y rattache
 const watch = function() {
 
-    // image changes
+    // images changes
     gulp.watch(folder.src + 'images/**/*', gulp.parallel(optimiser_images));
 
     // html changes

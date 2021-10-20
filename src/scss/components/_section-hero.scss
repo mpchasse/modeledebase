@@ -1,5 +1,11 @@
 .hero {
   margin-top: 20px;
+  div.image-logotitre{
+    img{
+      width:100%;
+      height:100%;
+    }
+  }
 
   div {
     text-align: center;
@@ -13,7 +19,7 @@
       position: relative;
       display: inline-block;
 
-      margin: 0px auto;
+      margin: 0 auto;
       margin-bottom: 50px;
       padding: 10px;
       width: 40%;
