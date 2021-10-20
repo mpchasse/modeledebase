@@ -9,15 +9,16 @@
 <div class="wrapper">
 
     <div class="hero1">
-        <div>
-            <div class="image-hero">
-                <h2><span>Marie-Pier Chassé</span></h2>
-            </div>
-            <div class="texte-hero">
-                <h1>Je veux créer !</h1>
-                <hr>
-            </div>
+        <img class="logotitre" src="<?php echo bloginfo('template_url'); ?>/images/logotitre.png"/>
+        <!--        <div>-->
+        <!--            <div class="image-hero">-->
+        <!--                <h2><span>Marie-Pier Chassé</span></h2>-->
+        <!--            </div>-->
+        <div class="texte-hero">
+            <h1>Je veux créer !!</h1>
+            <hr>
         </div>
+        <!--        </div>-->
     </div>
 
     <!--------------------------------------SECTION------------------------------------------------------------------------->
@@ -29,31 +30,23 @@
         <article>
             <div class="titlearticle">
                 <div class="carredeco"></div>
-                <h3>Ce que j'offre</h3>
+                <h3>Qui suis-je ?</h3>
 
             </div>
             <div class="body-article">
 
                 <div class="info-article">
                     <p>
-                        Modèle dynamique possédant plusieurs aptitudes en DESIGN, dont le vectoriel et le matriciel,
-                        version compatible avec ton équipe et WordPress.
+
+                        Bonjour! Je suis Marie-Pier Chassé, designer qui ne peux pas vivre sans son agenda
+                        et ses beaux crayons. Je suis passionnée par la création autant à l'ordinateur qu'à la main.
+                        J'habite présentement sur la Rive-Sud de Montréal avec mon conjoint et mes chats.
+                        Quand je ne suis pas à l'ordinateur, vous me trouverez dans la cuisine ou devant la télévision.
+
                     </p>
-                    <div class="lesboutons">
-                        <div class="unbouton">
-                            <div class="arrowbutton"></div>
-                            <button class="btn"><a href=<?php echo bloginfo('template_url'); ?>/images/cv.pdf" download>Voir
-                                    mon C.V.</a></button>
-                        </div>
-                        <div class="unbouton">
-                            <div class="arrowbutton"></div>
-                            <button class="btn"><a href="https://youtu.be/WjixzzK1Qoo">Présentation vidéo</a></button>
-                        </div>
-                    </div>
+
                 </div>
-
-
-                <div class="image-article">
+                <div class="image-apropos">
 
                     <img class="equerrebleue" src="<?php echo bloginfo('template_url'); ?>/images/equerrebleue.png"
                          height="316" width="319"/>
@@ -69,6 +62,8 @@
                     <img class="equerrejaune" src="<?php echo bloginfo('template_url'); ?>/images/equerrejaune.png"
                          height="316" width="316"/>
                 </div>
+
+
             </div>
 
 
@@ -80,14 +75,14 @@
         <article>
             <div class="titlearticle">
                 <div class="carredeco"></div>
-                <h3>Ce que je fais</h3>
+                <h3>Mes connaissances</h3>
             </div>
 
             <div class="body-article">
                 <div class="info-article">
-                    <div>Si la commande est passée rapidement, vous recevrez en prime l'extension pour
-                        l'animation 2D. Nous ajouterons également à ce modèle polyvalent une
-                        option d'entraide illimité à ne pas manquer.
+                    <div><p> Je suis fraîchement diplomée de la Technique d'intégration multimédia. Créer est pour
+                            J'utilise principalement la suite Adobe ainsi que Figma. autant en web qu'en graphisme.
+                            Outre que de travailler sur des projets personnels, j'adore collaborer avec </p>
                     </div>
                     <div class="icones-articles">
 
@@ -117,9 +112,10 @@
                 </div>
 
 
-                <div class="image-article">
-                    <img class='competences' src="<?php echo bloginfo('template_url'); ?>/images/competences.png"/>
-                </div>
+                <!--                <div class="image-article">-->
+                <!--                    <img class='competences' src="-->
+                <?php //echo bloginfo('template_url'); ?><!--/images/competences.png"/>-->
+                <!--                </div>-->
             </div>
 
 
@@ -128,37 +124,46 @@
         <article>
             <div class="titlearticle">
                 <div class="carredeco"></div>
-                <h3>Ce que je suis</h3>
+                <h3>Mes valeurs</h3>
             </div>
 
             <div class="body-article">
                 <div class="info-article">
-                    <div>Bref, vous aurez à votre portée une joueuse d'équipe multidisciplinaire pour rencontrer tout
-                        vos délais serrés grâce à une gestion des priorités optimisée.
+                    <div><p>Je vise par mes designs à apporter une vision claire et originale de votre...
+                            J'ai à coeur l'expérience des utilisateurs.
+                            Mon style de design est organisé, créatif et empreint de couleur.</p>
                     </div>
-                    <div class="icones-articles">
-                        <img src="<?php echo bloginfo('template_url'); ?>/images/couleurs.png"/>
-                        <img src="<?php echo bloginfo('template_url'); ?>/images/chat.png"/>
-                        <img src="<?php echo bloginfo('template_url'); ?>/images/tv.png"/>
-                        <img src="<?php echo bloginfo('template_url'); ?>/images/plume.png"/>
-                        <img src="<?php echo bloginfo('template_url'); ?>/images/laine.png"/>
-                    </div>
+                    <!--                    <div class="icones-articles">-->
+                    <!--                        <img src="-->
+                    <?php //echo bloginfo('template_url'); ?><!--/images/couleurs.png"/>-->
+                    <!--                        <img src="-->
+                    <?php //echo bloginfo('template_url'); ?><!--/images/chat.png"/>-->
+                    <!--                        <img src="-->
+                    <?php //echo bloginfo('template_url'); ?><!--/images/tv.png"/>-->
+                    <!--                        <img src="-->
+                    <?php //echo bloginfo('template_url'); ?><!--/images/plume.png"/>-->
+                    <!--                        <img src="-->
+                    <?php //echo bloginfo('template_url'); ?><!--/images/laine.png"/>-->
+                    <!--                    </div>-->
                 </div>
 
-                <div class="image-article">
-                    <img class='qualites' src="<?php echo bloginfo('template_url'); ?>/images/qualites.png"/>
-                </div>
+                <!--                <div class="image-article">-->
+                <!--                    <img class='qualites' src="-->
+                <?php //echo bloginfo('template_url'); ?><!--/images/qualites.png"/>-->
+                <!--                </div>-->
             </div>
         </article>
 
         <div class="call-to-action">
 
-            <button class="btn"><a href="<?php bloginfo('url'); ?>/contact">Contactez-moi pour une entrevue</a></button>
+            <button class="btn"><a href="<?php bloginfo('url'); ?>/contact">Contactez-moi pour en savoir plus</a>
+            </button>
 
         </div>
 
 
     </section>
+
 
 </div>
 <!--------------------------------------FOOTER------------------------------------------------------------------------->

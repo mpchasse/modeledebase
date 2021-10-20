@@ -84,3 +84,8 @@
 </header>
 
 <!-- Header Fin -->
+
+<div class="wrapper">
+
+    <div class="hero">
+        <img class="logotitre" src="<?php echo bloginfo('template_url'); ?>/images/logotitre.png"/>

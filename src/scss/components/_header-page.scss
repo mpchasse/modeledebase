@@ -13,7 +13,7 @@
 
 .waveWrapper {
   //position: relative;
-  //z-index: -5;
+  z-index: -5;
 
   overflow: hidden;
   position: absolute;
@@ -91,7 +91,9 @@ header {
 
 
   nav {
-
+    input {
+      visibility: hidden;
+    }
 
     ul {
       display: flex;
@@ -182,6 +184,101 @@ header {
     }
 
   }
+
+}
+
+@media screen and (max-width: 1280px) {
+
+  .wave1 {
+    top: -50px;
+    background-size: 100%;
+  }
+  .wave2 {
+    top: -50px;
+    background-size: 100%;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  header {
+
+    .navbar {
+      //background-color: $noir;
+      z-index: 4;
+    }
+
+    nav ul {
+      flex-direction: column;
+      background-color: #282828;
+      width: 100%;
+      margin-top: 50px;
+
+      li {
+        //font-size: $fz-mobilenav;
+        text-align: center;
+        margin: 5px auto;
+      }
+    }
+
+
+    .show-menu {
+      display: block;
+    }
+
+    .showNav {
+      display: flex;
+      width: 100%;
+      //height:25%;
+
+    }
+
+    span {
+      display: block;
+    }
+
+    .iconemenu {
+      //display: flex;
+      z-index: 50;
+
+      position: absolute;
+      width: 10%;
+      margin-left: 80%;
+      //margin-top: 25px;
+    }
+
+    //.logotype {
+    //  width: 100px;
+    //  height: 100px;
+    //  position: relative;
+    //  top: -86px;
+    //  left: 30px;
+    //
+    //  transform: rotate(45deg);
+    //  background-color: $violet;
+    //  border: 5px solid $blanc;
+    //  z-index: 5;
+    //
+    //  img {
+    //    position: relative;
+    //    top: 40px;
+    //    left: 40px;
+    //    width: 40px;
+    //
+    //    transform: rotate(-45deg);
+    //
+    //  }
+    //
+    //}
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 768px) {
 
 }
 

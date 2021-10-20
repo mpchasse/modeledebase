@@ -1,5 +1,6 @@
-
-
+</div>
+</div>
+<!-- Footer Début -->
 
 <footer>
 
@@ -11,3 +12,5 @@
 <?php wp_footer(); ?>
 </body>
 </html>
+
+<!-- Footer Fin -->

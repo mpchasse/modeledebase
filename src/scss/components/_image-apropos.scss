@@ -1,0 +1,51 @@
+.image-apropos {
+  position: absolute;
+  top: 0;
+  right: -75px;
+
+  .equerrebleu {
+    position: absolute;
+    bottom: 75px;
+    left: 75px;
+
+  }
+
+  .equerrejaune {
+    position: absolute;
+    top: 125px;
+    right: 75px;
+
+  }
+
+  .portrait {
+    height: 80%;
+    width: 80%;
+    position: absolute;
+    top: 70px;
+    right: 70px;
+
+    .portrait-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      h4 {
+        margin: 0;
+
+      }
+
+      img {
+        width: 20%;
+        height: 20%;
+      }
+
+    }
+
+    .portrait-image {
+
+      //width: 70%;
+    }
+
+  }
+
+}

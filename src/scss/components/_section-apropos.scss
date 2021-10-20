@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
 
   .icones-articles {
     display: flex;
@@ -21,16 +22,16 @@
     flex-direction: row;
     justify-content: space-between;
     margin-left: 75px;
+    width: 100%;
   }
 
   .info-article {
 
-    width: 60%;
+    width: 100%;
   }
 
+
   .image-article {
-    //width:30%;
-    //height:30%;
     position: relative;
 
     .equerrebleu {
@@ -106,6 +107,16 @@
   }
 }
 
+.section-apropos {
+  article:first-child {
+    .body-article{
+      .info-article {
+        width: 65%;
+      }
+    }
+  }
+}
+
 
 @media screen and (max-width: 375px) {
   .section-apropos {
@@ -131,12 +142,13 @@
       flex-direction: column-reverse;
       align-items: center;
       width: 100%;
-      margin-left:0;
+      margin-left: 0;
     }
 
     .info-article {
       width: 90%;
-      div{
+
+      div {
         font-size: $fz-mobilep;
       }
     }
@@ -162,18 +174,19 @@
         height: 150px;
         right: 130px;
       }
+
       //
       .portrait {
         width: 50%;
         //margin: 25px auto;
-      //  height: 50%;
-      //  width: 50%;
-      //  margin:0 auto;
+        //  height: 50%;
+        //  width: 50%;
+        //  margin:0 auto;
         position: relative;
         top: 0;
         left: 60px;
 
-      //  //right: 70px;
+        //  //right: 70px;
 
         .portrait-title {
           display: flex;
