@@ -75,8 +75,9 @@ header {
 
   div.img-logo {
     position: absolute;
-    top:5px;
-    left:50px;
+    top: 5px;
+    left: 50px;
+    z-index:3;
 
     img {
       width: 75%;
@@ -225,7 +226,7 @@ header {
       flex-direction: column;
       background-color: #282828;
       width: 100%;
-      margin-top: 50px;
+      padding-top: 50px;
 
       li {
         //font-size: $fz-mobilenav;
@@ -257,7 +258,7 @@ header {
       position: absolute;
       width: 10%;
       margin-left: 80%;
-      //margin-top: 25px;
+      margin-top: 25px;
     }
 
     //.logotype {
@@ -296,19 +297,13 @@ header {
 
 @media screen and (max-width: 375px) {
 
-
-  .wave1 {
-    background-size: 150%;
-  }
-  .wave2 {
-    background-size: 200%;
-  }
-
   .navbar {
     display: none;
   }
 
+
   header {
+
 
     //navbar {
     //  display: block;
