@@ -1,0 +1,28 @@
+section.section-noire {
+  background-color: $noir;
+  padding:50px;
+  color: $blanc;
+
+  div.wrapper{
+    margin:0 auto;
+    h2 {
+      text-align: center;
+    }
+
+
+    div.trois-colonnes {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      div {
+        display: flex;
+        flex-direction: column;
+
+      }
+  }
+
+
+
+  }
+}

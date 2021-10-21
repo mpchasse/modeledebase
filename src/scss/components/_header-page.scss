@@ -16,7 +16,7 @@
   z-index: -5;
 
   overflow: hidden;
-  position: absolute;
+  //position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
@@ -71,6 +71,18 @@
 
 header {
   width: 100%;
+  position: relative;
+
+  div.img-logo {
+    position: absolute;
+    top:5px;
+    left:50px;
+
+    img {
+      width: 75%;
+
+    }
+  }
 
   .show-menu {
     display: none;
@@ -162,28 +174,28 @@ header {
     }
   }
 
-  .logotype {
-    width: 200px;
-    height: 200px;
-    position: relative;
-    top: -140px;
-    left: 80px;
-
-    transform: rotate(45deg);
-    background-color: $violet;
-    border: 5px solid $blanc;
-
-    img {
-      position: relative;
-      top: 120px;
-      left: 100px;
-      width: 75px;
-
-      transform: rotate(-45deg);
-
-    }
-
-  }
+  //.logotype {
+  //  width: 200px;
+  //  height: 200px;
+  //  position: relative;
+  //  top: -140px;
+  //  left: 80px;
+  //
+  //  transform: rotate(45deg);
+  //  background-color: $violet;
+  //  border: 5px solid $blanc;
+  //
+  //  img {
+  //    position: relative;
+  //    top: 120px;
+  //    left: 100px;
+  //    width: 75px;
+  //
+  //    transform: rotate(-45deg);
+  //
+  //  }
+  //
+  //}
 
 }
 
